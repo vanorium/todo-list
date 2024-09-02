@@ -1,6 +1,6 @@
-# TODO app
+# TODO list
 
-A simple TODO app based on React + Vite
+A simple TODO list based on React + Vite
 
 ![image](https://github.com/user-attachments/assets/69d1e64b-ac43-448e-9180-bbeaedad0cf2)
 
