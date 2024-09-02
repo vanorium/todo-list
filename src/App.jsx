@@ -2,6 +2,10 @@ import { useState, useRef, act } from 'react'
 
 const savetask = JSON.parse(localStorage.getItem('tasks'))
 
+const rainbowColor = (i) => {
+  return `hsl(${(i * 32) % 360}, 100%, 50%)`
+}
+
 export default () => {
   const [tasks, setTasks] = useState(savetask?.tasks || [])
   const [inputValue, setInputValue] = useState('')
@@ -47,7 +51,7 @@ export default () => {
 
     return (
       <div className='block'>
-        <div onClick={handleToggle} style={{color:`hsl(${(task.id * 32) % 360}, 100%, 50%)`}} className={`note ${active==-1 ? 'inactive' : ''}`}>{task.text}</div>
+        <div onClick={handleToggle} style={{color:rainbowColor(task.id)}} className={`note ${active==-1 ? 'inactive' : ''}`}>{task.text}</div>
         <button onClick={() => removeTask(task.id)}>🧨</button>
       </div>
     )
