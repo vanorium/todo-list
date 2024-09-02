@@ -8,11 +8,15 @@ A simple TODO app based on React + Vite
 
 ### Setup
 
-`git clone https://github.com/vanorium/todo-list.git`  
-`cd vanorium/todo-list`  
-`npm install`  
+`git clone https://github.com/vanorium/todo-list.git`
+
+`cd todo-list`
+
+`npm install`
+
 `npm run dev`
 
 ### Building
-`npm run build`  
-A collection of builded files will be collected in a folder 'dist'.
+`npm run build`
+
+A collection of builded files will be collected in a folder "dist"

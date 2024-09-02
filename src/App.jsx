@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, act } from 'react'
 
 const savetask = JSON.parse(localStorage.getItem('tasks'))
 
@@ -23,9 +23,9 @@ export default () => {
   }
   
 
-  const removeTask = (id) => {
+  const removeTask = (removeId) => {
     setTasks(actualTasks => {
-      const updated = actualTasks.filter(task => task.id!=id)
+      const updated = actualTasks.filter(task => task.id!=removeId)
       localStorage.setItem('tasks', JSON.stringify({tasks:updated, newId:newId.current}));
       return updated
     })
@@ -46,8 +46,8 @@ export default () => {
     }
 
     return (
-      <div onClick={handleToggle} className='block'>
-        <div style={{color:`hsl(${(task.id * 32) % 360}, 100%, 50%)`}} className={`note ${active==-1 ? 'inactive' : ''}`}>{task.text}</div>
+      <div className='block'>
+        <div onClick={handleToggle} style={{color:`hsl(${(task.id * 32) % 360}, 100%, 50%)`}} className={`note ${active==-1 ? 'inactive' : ''}`}>{task.text}</div>
         <button onClick={() => removeTask(task.id)}>🧨</button>
       </div>
     )
