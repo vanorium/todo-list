@@ -2,8 +2,7 @@
 
 A simple TODO list based on React + Vite
 
-![image](https://github.com/user-attachments/assets/69d1e64b-ac43-448e-9180-bbeaedad0cf2)
-
+![image](https://github.com/user-attachments/assets/b0cab26b-c71e-407b-a67c-1ad0b1b1b84c)
 
 ### Requirements
 
