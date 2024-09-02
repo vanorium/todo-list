@@ -1,0 +1,85 @@
+*{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.25rem;
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+html,
+body{
+  width: 100%;
+}
+
+h1{
+  margin-top: 1rem;
+
+}
+
+.container{
+  margin: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  background: rgb(224, 224, 224);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.input-container{
+  display: flex;
+}
+
+input{
+  background: rgb(241, 241, 241);
+  padding: 1rem;
+  padding-right: 0;
+  width: 100%;
+}
+
+button{
+  transition: 0.128s ease-in-out;
+  background: rgb(196, 196, 196);
+  padding: 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+button:hover{
+  background: rgb(177, 177, 177);
+}
+
+button:active{
+  background: rgb(158, 158, 158);
+}
+
+.block{
+  display: flex;
+}
+
+.note{
+  word-break: break-all;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.block:nth-child(even){
+    background: rgb(212, 212, 212);
+}
+
+.inactive{
+  background: rgb(163, 163, 163);
+  text-decoration: line-through;
+}
