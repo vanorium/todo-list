@@ -10,7 +10,7 @@ A simple TODO app based on React + Vite
 
 `git clone https://github.com/vanorium/todo-list.git`  
 `cd vanorium/todo-list`  
-`npm install`
+`npm install`  
 `npm run dev`
 
 ### Building
