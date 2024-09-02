@@ -16,9 +16,12 @@ A simple TODO list based on React + Vite
 
 `npm install`
 
+### Preview
+
 `npm run dev`
 
 ### Building
+
 `npm run build`
 
 A collection of builded files will be collected in a folder "dist"
