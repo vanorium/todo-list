@@ -1,6 +1,6 @@
 # TODO list
 
-A simple TODO list based on React + Vite
+A simple TODO list based on **React** + **Vite** with **localStorage** 
 
 ![image](https://github.com/user-attachments/assets/b0cab26b-c71e-407b-a67c-1ad0b1b1b84c)
 
